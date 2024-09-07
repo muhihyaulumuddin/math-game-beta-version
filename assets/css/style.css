@@ -1,0 +1,126 @@
+body {
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mulish", sans-serif;
+}
+
+.welcome-container,
+.game-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  animation: border-rotate 5s linear infinite;
+}
+
+@keyframes border-rotate {
+  0% {
+    border: 3px solid #3498db;
+  }
+
+  25% {
+    border: 3px solid #e74c3c;
+  }
+
+  50% {
+    border: 3px solid #2ecc71;
+  }
+
+  75% {
+    border: 3px solid #f1c40f;
+  }
+
+  100% {
+    border: 3px solid #3498db;
+  }
+}
+
+.game-container {
+  display: none;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  padding: 5px;
+}
+
+#time-bar {
+  height: 5px;
+  background-color: #3498db;
+  transition: width 1s linear;
+}
+
+.btn-option {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.correct {
+  background-color: #28a745 !important;
+  color: #fff !important;
+}
+
+.wrong {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.animate-question {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.animate-question.active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.5s ease;
+}
+
+.swal2-popup {
+  font-size: 1rem;
+  font-family: "Mulish", sans-serif;
+  border-radius: 0.75rem;
+}
+
+.swal-title {
+  color: #333;
+  font-weight: bold;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #3498db !important;
+  color: #fff !important;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.swal2-styled.swal2-cancel {
+  background-color: #e74c3c !important;
+  color: #fff !important;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}

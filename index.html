@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="assets/css/sweetalert2.min.css" />
+    <title>Math Game</title>
+  </head>
+
+  <body>
+    <div class="welcome-container">
+      <h1 class="mb-4">Welcome to the Math Game!</h1>
+      <form action="" id="welcomeForm">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Start Game</button>
+      </form>
+    </div>
+
+    <div class="container game-container">
+      <h1 class="mb-4">Math Game</h1>
+      <div id="playerName" class="fs-5 mb-3"></div>
+      <div id="timer" class="game-info fs-4">
+        <span id="time-remaining">15<span>s Remaining</span></span>
+      </div>
+      <div id="time-bar"></div>
+      <div id="question" class="animate-question fs-3 mb-3"></div>
+      <div id="options"></div>
+      <button id="musicControl" class="btn btn-secondary">Toggle Music</button>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script JS -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- SweetAlert2 JS -->
+    <script src="assets/js/sweetalert2.all.min.js"></script>
+  </body>
+</html>
